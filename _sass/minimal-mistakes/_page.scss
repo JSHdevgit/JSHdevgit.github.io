@@ -47,6 +47,11 @@ body {
     padding-right: $right-sidebar-width;
   }
 
+  @include breakpoint($xx-large) {
+    width: calc(100% - #{$right-sidebar-width});
+    padding-right: calc($right-sidebar-width - 5em);
+  }
+
   .page__inner-wrap {
     float: left;
     margin-top: 1em;
