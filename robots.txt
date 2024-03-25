@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jshdevgit.github.io/sitemap.xml
