@@ -14,13 +14,6 @@ table {
   & + table {
     margin-top: 1em;
   }
-  thead, tr, th, td, tbody {
-    width: 100%;
-    display: flex;
-  }
-  tbody {
-    flex-direction: column;
-  }
 }
 
 thead {
@@ -44,3 +37,21 @@ td,
 th {
   vertical-align: middle;
 }
+
+//tr {
+//  display: flex;
+//  width: 100%;
+//}
+//table th:last-child {
+//
+//flex: 1;
+//}
+//table th:nth-of-type(2) {
+//  width: 10%;
+//}
+//table th:nth-of-type(3) {
+//  width: 30%;
+//}
+//table th:nth-of-type(4) {
+//  width: 50%;
+//}
