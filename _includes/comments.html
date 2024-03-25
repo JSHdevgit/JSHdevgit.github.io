@@ -1,4 +1,4 @@
-<div class="page__comments">
+<div class="page__comments"  style="background: transparent">
   {% capture comments_label %}{{ site.data.ui-text[site.locale].comments_label | default: "Comments" }}{% endcapture %}
   {% case site.comments.provider %}
     {% when "discourse" %}
@@ -6,7 +6,7 @@
       <section id="discourse-comments"></section>
     {% when "disqus" %}
       <h4 class="page__comments-title">{{ comments_label }}</h4>
-      <section id="disqus_thread"></section>
+      <section id="disqus_thread" style="background: transparent"></section>
     {% when "facebook" %}
       <h4 class="page__comments-title">{{ comments_label }}</h4>
       <section class="fb-comments" data-href="{{ page.url | absolute_url }}" data-mobile="true" data-num-posts="{{ site.comments.facebook.num_posts | default: 5 }}" data-width="100%" data-colorscheme="{{ site.comments.facebook.colorscheme | default: 'light' }}"></section>
@@ -180,13 +180,3 @@
 </div>
 
 
-<style>
-  textarea {
-    background: transparent !important;
-  }
-.page__comments {
-  .textarea-wrapper /deep/ {
-    background: transparent !important;
-  }
-}
-</style>
