@@ -14,6 +14,13 @@ table {
   & + table {
     margin-top: 1em;
   }
+  thead, tr, th, td, tbody {
+    width: 100%;
+    display: flex;
+  }
+  tbody {
+    flex-direction: column;
+  }
 }
 
 thead {
